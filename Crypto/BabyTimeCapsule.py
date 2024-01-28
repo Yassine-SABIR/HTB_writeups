@@ -49,7 +49,6 @@ while lower_boundary < upper_boundary:
         if mediane**e > result:
             upper_boundary = mediane
         else:
-            print(mediane)
             break
 
 mediane = hex(mediane)[2:]
@@ -59,4 +58,4 @@ flag = ""
 for i in range(0, len(mediane), 2):
     flag += chr(int(mediane[i:i+2], 16))
 
-print(flag)
+print(flag) # HTB{t3h_FuTUr3_15_bR1ghT_1_H0p3_y0uR3_W34r1nG_5h4d35!}
