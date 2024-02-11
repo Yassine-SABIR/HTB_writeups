@@ -2,8 +2,7 @@ import cv2
 import numpy as np
 from zipfile import ZipFile
 import os
-
-os.chdir("M0rsearchive")
+import shutil
 
 morse_code_dict = {'.-': 'a', '-...': 'b', '-.-.': 'c', '-..': 'd', '.': 'e', '..-.': 'f', '--.': 'g', '....': 'h', '..': 'i', '.---': 'j', '-.-': 'k', '.-..': 'l', '--': 'm', '-.': 'n', '---': 'o', '.--.': 'p', '--.-': 'q', '.-.': 'r', '...': 's', '-': 't', '..-': 'u', '...-': 'v', '.--': 'w', '-..-': 'x', '-.--': 'y', '--..': 'z', '.----': '1', '..---': '2', '...--': '3', '....-': '4', '.....': '5', '-....': '6', '--...': '7', '---..': '8', '----.': '9', '-----': '0'}
 
@@ -40,28 +39,26 @@ def getPassword(path):
 
     return password
 
-def extractZip(pathZip, password):
-    with ZipFile(pathZip, 'r') as zipFile:
+def extractZip(archiveNumber, password):
+    zipName = "flag_" + str(archiveNumber)
+
+    with ZipFile(zipName + ".zip", 'r') as zipFile:
         zipFile.extractall(pwd=bytes(password, 'utf-8'))
+        shutil.move(os.getcwd() + "\\flag\\flag_" + str(archiveNumber - 1) + ".zip", os.getcwd() + "\\flag_" + str(archiveNumber - 1) + ".zip")
+        shutil.move(os.getcwd() + "\\flag\\pwd.png", os.getcwd() + "\\pwd.png")
+        shutil.rmtree(os.getcwd() + "\\flag")
         zipFile.close()
 
 
 def main():
 
-    for archiveNumber in range(999, 0, -1):
+    for archiveNumber in range(999, -1, -1):
         zipName = "flag_" + str(archiveNumber)
         password = getPassword("pwd.png")
         try:
-            extractZip(zipName + ".zip", password)
-            os.chdir("flag")
+            extractZip(archiveNumber, password)
         except:
-            try:
-                extractZip(zipName + ".zip", password.upper())
-                os.chdir("flag")
-            except:
-                print("ERROR"+ " " + str(archiveNumber))
-                break
+            print("ERROR"+ " " + str(archiveNumber))
+            break
 
-
-
-#main()
+main()
