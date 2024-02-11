@@ -61,4 +61,10 @@ def main():
             print("ERROR"+ " " + str(archiveNumber))
             break
 
+    flag_file = open(os.getcwd() +"\\flag\\flag", 'r')
+    flag = flag_file.read()
+    print(flag)#HTB{D0_y0u_L1k3_m0r53??}
+
+
+
 main()
