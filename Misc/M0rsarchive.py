@@ -44,9 +44,9 @@ def extractZip(archiveNumber, password):
 
     with ZipFile(zipName + ".zip", 'r') as zipFile:
         zipFile.extractall(pwd=bytes(password, 'utf-8'))
-        shutil.move(os.getcwd() + "\\flag\\flag_" + str(archiveNumber - 1) + ".zip", os.getcwd() + "\\flag_" + str(archiveNumber - 1) + ".zip")
-        shutil.move(os.getcwd() + "\\flag\\pwd.png", os.getcwd() + "\\pwd.png")
-        shutil.rmtree(os.getcwd() + "\\flag")
+        shutil.move(os.getcwd() + "/flag/flag_" + str(archiveNumber - 1) + ".zip", os.getcwd() + "/flag_" + str(archiveNumber - 1) + ".zip")
+        shutil.move(os.getcwd() + "/flag/pwd.png", os.getcwd() + "/pwd.png")
+        shutil.rmtree(os.getcwd() + "/flag")
         zipFile.close()
 
 
@@ -61,7 +61,7 @@ def main():
             print("ERROR"+ " " + str(archiveNumber))
             break
 
-    flag_file = open(os.getcwd() +"\\flag\\flag", 'r')
+    flag_file = open(os.getcwd() +"/flag/flag", 'r')
     flag = flag_file.read()
     print(flag)#HTB{D0_y0u_L1k3_m0r53??}
 
