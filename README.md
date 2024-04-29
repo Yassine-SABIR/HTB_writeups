@@ -12,9 +12,9 @@
 <body>
   <h1>🚩Welcome to the HTB Challenges Writeups Repository🚩</h1>
   <p>In this repository, you will find writeups of Hack The Box challenges grouped by categories. These writeups are written by myself, Yassine SABIR (username HTB: yabir).</p>
-  <p>Feel free to explore the solutions provided here. Enjoy &#128512;.</p>
+  <p>Feel free to explore the solutions provided here. Enjoy 🙂.</p>
   <footer>
-    <p>Author: Yassine SABIR (HTB: yabir)</p>
+    <p style="text-align:right;">©️ Yassine SABIR (HTB: yabir)</p>
   </footer>
 </body>
 </html>
