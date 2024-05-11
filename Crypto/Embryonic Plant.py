@@ -47,7 +47,7 @@ To do so, we have:
 
     s[2] - s[1] = p * (s[1]-s[0]) % r
 
-    so p = (s[2] - s[1])*inverse(s[1]-s[0]) % r, cause p < r 
+    so p = (s[2] - s[1])*inverse(s[1]-s[0]) % r, (because p < r)
 
 """
 
@@ -55,7 +55,7 @@ p = ((s[2] - s[1]) * pow(s[1] - s[0], -1, r)) % r
 
 """
 For q, we have :
-    q = s[1] - p * s[0] % r, cause q < r
+    q = s[1] - p * s[0] % r, (because q < r)
 """
 
 q = (s[1] - p * s[0]) % r
