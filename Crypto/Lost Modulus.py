@@ -1,4 +1,4 @@
-# HTB Lost Modulus yabir
+# HTB Lost Modulus YS4B
 from Crypto.Util.number import getPrime, long_to_bytes, inverse
 
 e = 3
