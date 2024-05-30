@@ -1,4 +1,4 @@
-# HTB Simple Encryptor yabir
+# HTB Simple Encryptor YS4B
 
 import numpy as np
 from ctypes import CDLL
