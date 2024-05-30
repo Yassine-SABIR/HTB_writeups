@@ -1,4 +1,4 @@
-# HTB xorxorxor yabir
+# HTB xorxorxor YS4B
 
 encryptedFlag = '134af6e1297bc4a96f6a87fe046684e8047084ee046d84c5282dd7ef292dc9'
 
