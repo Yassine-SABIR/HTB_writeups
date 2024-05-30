@@ -1,4 +1,4 @@
-# HTB Rhome yabir
+# HTB Rhome YS4B
 
 from sympy import discrete_log
 from Crypto.Cipher import AES
