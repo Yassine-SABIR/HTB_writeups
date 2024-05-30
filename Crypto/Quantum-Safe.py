@@ -1,4 +1,4 @@
-# HTB Quantum-Safe yabir
+# HTB Quantum-Safe YS4B
 import numpy as np
 
 pubkey = np.array([[47, -77, -85],[-49, 78, 50],[57, -78, 99]])
