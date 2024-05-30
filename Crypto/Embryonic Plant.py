@@ -1,4 +1,4 @@
-# HTB Embryonic Plant yabir
+# HTB Embryonic Plant YS4B
 
 from Crypto.Util.number import getPrime, long_to_bytes, inverse
 from Crypto.Cipher import AES
