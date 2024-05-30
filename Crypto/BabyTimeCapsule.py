@@ -1,4 +1,4 @@
-# HTB Baby Time Capsule yabir
+# HTB Baby Time Capsule YS4B
 from pwn import *
 
 s = remote('94.237.62.195', 30156)
