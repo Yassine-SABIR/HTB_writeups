@@ -20,5 +20,5 @@ def decrypt(xored, key):
         data += chr(xored[i] ^ key[i % len(key)])
     return data
 
-print(decrypt(encryptedFlagList, key)) # HTB{rep34t3d_x0r_n0t_s0_s3cur3}
+print(decrypt(encryptedFlagList, key)) # HTB{D0_1t_Your$3lf:)}
 
