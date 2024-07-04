@@ -58,4 +58,4 @@ flag = ""
 for i in range(0, len(mediane), 2):
     flag += chr(int(mediane[i:i+2], 16))
 
-print(flag) # HTB{t3h_FuTUr3_15_bR1ghT_1_H0p3_y0uR3_W34r1nG_5h4d35!}
+print(flag) # HTB{D0_1t_Your$3lf:)}
