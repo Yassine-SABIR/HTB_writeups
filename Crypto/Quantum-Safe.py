@@ -103,4 +103,4 @@ for v in flag_enc:
     vec = np.array([int(l) for l in v[1:-1].split(", ")])
     Flag += chr(Decrypt(vec, r))
 
-print(Flag) # HTB{r3duc1nG_tH3_l4tTicE_l1kE_n0b0dY's_pr0bl3M}
+print(Flag) # HTB{D0_1t_Your$3lf:)}
