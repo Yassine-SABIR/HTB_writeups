@@ -83,4 +83,4 @@ for i in range(4, len(content), 1):
 
     Flag += chr(byte_)
 
-print(Flag) #HTB{vRy_s1MplE_F1LE3nCryp0r}
+print(Flag) #HTB{D0_1t_Your$3lf:)}
