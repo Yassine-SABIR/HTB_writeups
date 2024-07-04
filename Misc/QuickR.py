@@ -53,7 +53,7 @@ s.sendline(result)
 
 data = s.recv()
 
-print(data) # b'\x1b[1m\x1b[92m[+] \x1b[0mCongratulations! Here is your flag: HTB{@lriGh7_1_tH1nK_y0u`r3_QuickR_s0ldi3r}'
+print(data) # b'\x1b[1m\x1b[92m[+] \x1b[0mCongratulations! Here is your flag: HTB{D0_1t_Your$3lf:)}'
 
 
 
