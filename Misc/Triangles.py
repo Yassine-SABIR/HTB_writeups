@@ -138,7 +138,7 @@ with open('out.csv') as grid:
             distance_list = []
         pass
 
-print(flag) # HTB{sQU@r3s_R_4_N3rD$}
+print(flag) # HTB{D0_1t_Your$3lf:)}
 
 
 
