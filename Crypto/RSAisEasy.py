@@ -49,4 +49,4 @@ for i in range(0, len(hex(flag1)[2:]), 2):
 for i in range(0, len(hex(flag2)[2:]), 2):
     flag2_txt += chr(int(hex(flag2)[2:][i: i+2], 16))
 
-print(flag1_txt + flag2_txt) # HTB{1_m1ght_h4v3_m3ss3d_uP_jU$t_4_l1ttle_b1t?}
+print(flag1_txt + flag2_txt) # HTB{D0_1t_Your$3lf:)}
