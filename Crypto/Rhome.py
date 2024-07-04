@@ -24,7 +24,7 @@ cipher = AES.new(key, AES.MODE_ECB)
 encrypted = bytes.fromhex(encrypted)
 flag = unpad(cipher.decrypt(encrypted), 16).decode()
 
-print(flag) # HTB{00ps_wh4t_4_sm411_0rd3r}
+print(flag) # HTB{D0_1t_Your$3lf:)}
 
 
 
