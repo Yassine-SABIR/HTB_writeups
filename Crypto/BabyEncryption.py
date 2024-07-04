@@ -28,7 +28,7 @@ print(decryption(message))
 
 """
 Th3 nucl34r w1ll 4rr1v3 0n fr1d4y.
-HTB{l00k_47_y0u_r3v3rs1ng_3qu4710n5_c0ngr475}
+HTB{D0_1t_Your$3lf:)}
 """
 
 
