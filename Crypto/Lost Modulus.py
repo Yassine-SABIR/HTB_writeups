@@ -32,5 +32,5 @@ plainText = ""
 for i in range(0, len(hex_plainTxt), 2):
     plainText += chr(int(hex_plainTxt[i:i+2], 16))
 
-print(plainText) # HTB{n3v3r_us3_sm4ll_3xp0n3n7s_f0r_rs4}
+print(plainText) # HTB{D0_1t_Your$3lf:)}
 
