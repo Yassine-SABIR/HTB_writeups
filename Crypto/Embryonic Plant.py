@@ -71,4 +71,4 @@ key = sha256(long_to_bytes(d)).digest()
 cipher = AES.new(key, AES.MODE_ECB)
 Flag_hex = unpad(cipher.decrypt(enc_flag), 16)
 
-print(Flag_hex) # HTB{0op5_my_$33d$_f311_0ff_5h3_gr0und_4nd_br0ugh5_y0u_4_fl4g!#@$%}
+print(Flag_hex) # HTB{D0_1t_Your$3lf:)}
