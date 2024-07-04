@@ -52,4 +52,4 @@ encryption_key = sha256(MASTER_KEY).digest()
 cipher = AES.new(encryption_key, AES.MODE_ECB)
 flag = unpad(cipher.decrypt(encrypted_flag), 16)
 
-print(flag)#HTB{m4ll34bl3_p4ssw0rd_g3n3r4t0r!}
+print(flag)# HTB{D0_1t_Your$3lf:)}
