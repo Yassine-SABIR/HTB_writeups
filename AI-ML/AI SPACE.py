@@ -17,4 +17,4 @@ plt.scatter(pos[:, 0], pos[:, 1], color='blue')
 for i, txt in enumerate(range(len(pos))):
     plt.annotate(txt, (pos[i, 0], pos[i, 1]))
 plt.grid()
-plt.show()
+plt.show() #HTB{D0_1t_Your$3lf:)}
