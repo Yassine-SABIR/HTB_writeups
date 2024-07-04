@@ -65,7 +65,7 @@ def main():
 
     flag_file = open(os.getcwd() +"/flag/flag", 'r')
     flag = flag_file.read()
-    print(flag)#HTB{D0_y0u_L1k3_m0r53??}
+    print(flag)# HTB{D0_1t_Your$3lf:)}
 
 
 
