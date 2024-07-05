@@ -1,8 +1,6 @@
 # HTB A Nightmare On Math Street YS4B
 
 import pwn
-import cv2
-import numpy as np
 
 host = "94.237.48.147"
 port = 36327
