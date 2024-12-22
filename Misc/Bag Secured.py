@@ -9,11 +9,6 @@ clt = pwn.connect(host, port)
 
 s = 100
 
-values = [3, 9, 4, 1]
-weights = [6, 7, 5, 2]
-C = 14
-N = 4
-
 def knapSack(W, wt, val, n):
     #https://www.geeksforgeeks.org/0-1-knapsack-problem-dp-10/
     if n == 0 or W == 0:
